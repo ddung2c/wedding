@@ -445,13 +445,22 @@
             <div id="map" class="wow fadeInUp" style="width:100%;height:350px;"></div>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a072f1551e1eb7c4deb294f33a91904a"></script>
             <script>
-                var container = document.getElementById('map');
-                var options = {
-                    center: new kakao.maps.LatLng(33.450701, 126.570667),
-                    level: 3
-                };
-        
-                var map = new kakao.maps.Map(container, options);
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div37.49190610419605 이고, 경도는 127.02029174238768
+                    mapOption = {
+                        center: new kakao.maps.LatLng(37.49190610419605, 127.02029174238768), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
+
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+                var markerPosition  = new kakao.maps.LatLng(37.56170714301528, 127.02029174238768);
+
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
             </script>
             <div class="wow fadeInUp section6-location p-3">
                 <div class="accordion" id="accordionExample">
