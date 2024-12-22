@@ -49,6 +49,14 @@
                 font-size: 3.5rem;
             }
         }
+        .map-icon-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* 아이콘 간 간격 조정 */
+        }
+        .map-icon {
+            margin: 0; /* 개별 마진 제거 */
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
@@ -481,18 +489,18 @@
             </script>
             <div class="form-group">
                 <div class="col-md-12">
-                    <div class="my-3 text-center">
+                    <div class="my-3 map-icon-container">
                         <a href="https://naver.me/FoENX2Ot">
                             <img alt="naver-map" class="map-icon" id="naver-map"
                                  src="img/map/navermap.png" width="30" height="30"/>
                         </a>
                         <a href="https://kko.kakao.com/TC1R8QCw2j ">
                             <img alt="kakao-map" class="map-icon" id="kakao-map"
-                                 src="img/map/kakaonavi.png" width="30" height="30" margin-left="1000px"/>
+                                 src="img/map/kakaonavi.png" width="30" height="30"/>
                         </a>
                         <a href="https://tmap.life/abe7b63c">
                             <img alt="tmap-map" class="map-icon" id="tmap-map"
-                                 src="img/map/tmap.png" width="50" height="50" margin-left="1000px"/>
+                                 src="img/map/tmap.png" width="50" height="50"/>
                         </a>
                     </div>
                 </div>
