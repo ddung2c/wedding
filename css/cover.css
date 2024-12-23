@@ -289,6 +289,7 @@ header {
   font-size: 1.35rem;
   background: none;
   border: none;
+  flex-wrap: nowrap;
   color: #5a6268;
 }
 
@@ -298,6 +299,7 @@ header {
   font-size: 1.35rem;
   background: none;
   border: none;
+  flex-wrap: nowrap;
   color: #685a62;
 }
 
