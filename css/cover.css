@@ -337,12 +337,12 @@ header {
 }
 
 .section5-table tr .sun{
-  color: red;
+  color: rgb(135, 135, 135);
 }
 
 .section5-table tr .check{
   color: white;
-  background-color: chocolate;
+  background-color: rgb(227, 136, 171);
   border-radius: 50px;
 }
 
@@ -421,7 +421,7 @@ header {
 .section7-button {
   font-family: NanumMyeongjo-b;
   font-size: 1.2rem;
-  background-color: #CC9999;
+  background-color: #dabcbc;
   color: #fff;
   border: 0;
   border-radius: 50px;
@@ -431,7 +431,7 @@ header {
 }
 
 .section7-button:hover {
-  background-color: #CC9999;
+  background-color: #dabcbc;
   color: #fff;
   border: 0;
 }
@@ -443,7 +443,7 @@ header {
 }
 
 .section7-button:valid {
-  background-color: #CC9999;
+  background-color: #dabcbc;
   color: #fff;
   border: 0;
 }
