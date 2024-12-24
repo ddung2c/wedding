@@ -261,12 +261,6 @@ header {
   box-shadow : 2px 2px 5px #999;
 }
 
-.container {
-  display: flex; /* Flexbox 활성화 */
-  justify-content: center; /* 가로축 가운데 정렬 */
-  align-items: center; /* 세로축 가운데 정렬 */
-  height: 100vh; /* 부모 컨테이너의 높이 설정 */
-}
 .section4-title {
   margin-top: 1em;
   color: #333;
@@ -287,12 +281,6 @@ header {
   font-family: NanumMyeongjo-b;
   line-height: 1.5em;
   font-size: 1.35rem;
-}
-
-.col {
-  display: flex; /* Flexbox 활성화 */
-  flex-wrap: nowrap; /* 한 줄에 유지 */
-  gap: 0.1rem; /* 버튼 간격 조정 */
 }
 
 .section4-sec3 {
