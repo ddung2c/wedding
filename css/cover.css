@@ -265,6 +265,7 @@ header {
   margin-top: 1em;
   color: #333;
   text-shadow: none;
+  position: relative;
 }
 
 .section4-sec1-2 {
