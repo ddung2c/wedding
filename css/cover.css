@@ -283,13 +283,19 @@ header {
   font-size: 1.35rem;
 }
 
+.col {
+  display: flex; /* Flexbox 활성화 */
+  flex-wrap: nowrap; /* 한 줄에 유지 */
+  align-items: center; /* 세로 정렬 */
+  gap: 1rem; /* 버튼 간격 조정 */
+}
+
 .section4-sec3 {
   font-family: NanumMyeongjo-b;
   line-height: 1.5em;
   font-size: 1.35rem;
   background: none;
   border: none;
-  flex-wrap: nowrap;
   color: #5a6268;
 }
 
@@ -299,7 +305,6 @@ header {
   font-size: 1.35rem;
   background: none;
   border: none;
-  flex-wrap: nowrap;
   color: #685a62;
 }
 
