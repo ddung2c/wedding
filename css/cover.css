@@ -271,8 +271,6 @@ header {
   margin-top: 1em;
   color: #333;
   text-shadow: none;
-  position: relative;
-  text-align: center; /* 텍스트만 중앙 정렬 */
 }
 
 .section4-sec1-2 {
