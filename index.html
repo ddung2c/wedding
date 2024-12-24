@@ -481,16 +481,17 @@
             <div id="map" class="wow fadeInUp" style="width:100%;height:350px;"></div>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a072f1551e1eb7c4deb294f33a91904a"></script>
             <script>
+                //https://apis.map.kakao.com/web/sample/addMapClickEventWithMarker/
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div37.49190610419605 이고, 경도는 127.02029174238768
                     mapOption = {
-                        center: new kakao.maps.LatLng(37.49190610419605, 127.02029174238768), // 지도의 중심좌표
-                        level: 3 // 지도의 확대 레벨
+                        center: new kakao.maps.LatLng(37.49243807647704, 127.01795682111283), // 지도의 중심좌표  37.49243807647704 이고, 경도는 127.01795682111283
+                        level: 4 // 지도의 확대 레벨
                     };
 
                 var map = new kakao.maps.Map(mapContainer, mapOption);
 
                 var imageSrc = 'img/favicon/android-icon-36x36.png', // 마커이미지의 주소입니다    
-                imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+                imageSize = new kakao.maps.Size(50, 50), // 마커이미지의 크기입니다
                 imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
       
                 // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
@@ -505,6 +506,27 @@
 
                 // 마커가 지도 위에 표시되도록 설정합니다
                 marker.setMap(map);
+
+
+                // bus stop
+                // 37.49402416510179 이고, 경도는 127.0157408209052
+                var busImage = 'img/favicon/bus-stop.png', // 마커이미지의 주소입니다    
+                busSize = new kakao.maps.Size(50, 50), // 마커이미지의 크기입니다
+                busOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+      
+                // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+                var busMarkerImage = new kakao.maps.MarkerImage(busImage, busSize, busOption),
+                busMarkerPosition  = new kakao.maps.LatLng(37.49402416510179, 127.0157408209052);
+
+                // 마커를 생성합니다
+                var busMarker = new kakao.maps.Marker({
+                    position: markerbusMarkerPositionPosition,
+                    image: busMarkerImage // 마커이미지 설정 
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                busMarker.setMap(map);
+
             </script>
             <div class="form-group">
                 <div class="col-md-12">
