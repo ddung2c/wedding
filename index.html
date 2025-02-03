@@ -572,8 +572,8 @@
                             <button class="btn btn-sm btn-secondary" onclick="copyToClipboard('groom-account')">Copy</button>
                         </div>
                         <div class="modal-body section7-modal section7-modal-content">
-                            아버지 김성강 : <span id="groom-account">우리은행 1002-236-975211</span>
-                            <button class="btn btn-sm btn-secondary" onclick="copyToClipboard('groom-account')">Copy</button>
+                            아버지 김성강 : <span id="groom-father-account">우리은행 1002-236-975211</span>
+                            <button class="btn btn-sm btn-secondary" onclick="copyToClipboard('groom-father-account')">Copy</button>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
@@ -596,15 +596,15 @@
                             </button>
                         </div>
                         <div class="modal-body section7-modal section7-modal-content">
-                            신부 정도연 : <span id="groom-account">우리은행 1002-757-659340</span>
+                            신부 정도연 : <span id="bride-account">우리은행 1002-757-659340</span>
                             <button class="btn btn-sm btn-secondary" onclick="copyToClipboard('bride-account')">Copy</button>
                         </div>
                         <div class="modal-body section7-modal section7-modal-content">
-                            아버지 정창화 : <span id="groom-account">하나은행 220-910067-76907</span>
+                            아버지 정창화 : <span id="bride-father-account">하나은행 220-910067-76907</span>
                             <button class="btn btn-sm btn-secondary" onclick="copyToClipboard('bride-father-account')">Copy</button>
                         </div>
                         <div class="modal-body section7-modal section7-modal-content">
-                            어머니 서미숙 : <span id="groom-account">국민은행 533-90-2041-17390</span>
+                            어머니 서미숙 : <span id="bride-mother-account">국민은행 533-90-2041-17390</span>
                             <button class="btn btn-sm btn-secondary" onclick="copyToClipboard('bride-mother-account')">Copy</button>
                         </div>
                         <div class="modal-footer">
@@ -630,7 +630,7 @@
     function copyToClipboard(elementId) {
         const textToCopy = document.getElementById(elementId).innerText;
         navigator.clipboard.writeText(textToCopy).then(() => {
-            alert("계좌번호가 복사되었습니다: " + textToCopy);
+            alert("계좌번호가 복사되었습니다: \n" + textToCopy);
         }).catch((err) => {
             alert("복사에 실패했습니다. 다시 시도해주세요.");
         });
